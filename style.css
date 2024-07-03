@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root{
-    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --box-shadow:rgba(0,0,0,24) 0px 3px 8px;
 }
 
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
     list-style: none;
 }
 
-h3{
-    text-align: center;
-    margin-bottom: 15px;
-    text-decoration: underline solid #393E46 3px;
-    font-size: 24px;
+h2{
+   text-align: center;
+   margin-bottom: 15px;
+   text-decoration: underline solid #393e46 3px;
+   font-size: 25px; 
 }
 
 .outer-wrap{
     width: 100%;
     min-height: 100vh;
-    background-color: #F5F7FA;
+    background-color: rgba(255, 255, 255, 0.835);
     padding: 30px;
 }
 
@@ -34,22 +33,22 @@ h3{
     margin: auto;
 }
 
-.heading {
+.heading{
     margin: 30px auto;
     padding: 0px 20px;
 }
 
 .heading .title{
     font-size: 30px;
-    color: #000000;
-    font-weight: 500;
+    color: black;
+    font-weight: 650;
     text-align: center;
 }
 
 .heading .subtitle{
     font-size: 20px;
-    color: #000000;
-    font-weight: 300;
+    color: black;
+    font-weight: 450;
     text-align: center;
 }
 
@@ -57,13 +56,13 @@ h3{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap:10px;
     margin: 30px auto;
 }
 
 .actions, .stats{
     flex-grow: 1;
-    background-color: #FFFFFF;
+    background-color: white;
     padding: 20px;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
@@ -76,6 +75,7 @@ h3{
     margin: 10px;
 }
 
+
 .actions .add input{
     font-size: 18px;
     padding: 5px;
@@ -86,15 +86,15 @@ h3{
     padding: 7px 15px;
     border-radius: 5px;
     border: 0px;
-    background-color: #2666CF;
-    color: #FFFFFF;
+    background-color: #2c58a0;
+    color: white;
     cursor: pointer;
     box-shadow: var(--box-shadow);
 }
 
 .stats p{
-    background-color: #bed7ff;
-    margin: 20px 10px;
+    background-color: beige;
+    margin: 20px;
     padding: 10px 20px;
     box-shadow: var(--box-shadow);
     font-size: 18px;
@@ -102,9 +102,10 @@ h3{
     text-align: center;
 }
 
+
 .stats p.balance{
     background-color: #fff2dd92;
-    border-right: 10px solid #F6C065;
+    border-right: 10px solid #F6C065 ;
 }
 
 .stats p.income{
@@ -114,22 +115,18 @@ h3{
 
 .stats p.expense{
     background-color: #ffeef0bb;
-    border-right: 10px solid #EB596E;
-}
-
-.stats p span{
-    font-size: 18px;
+    border-right: 10px solid #EB596E ;
 }
 
 .transaction-history{
-    margin: 40px 10px;
-    background-color: #FFFFFF;
+    margin: 4px 10px;
+    background-color: white;
     border-radius: 10px;
     padding: 30px 0px;
     box-shadow: var(--box-shadow);
 }
 
-.records{
+.record{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -137,54 +134,53 @@ h3{
     margin: 20px;
 }
 
-.records div{
+.record div{
     flex-grow: 1;
     padding: 10px;
 }
 
-.records li{
+.record li{
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: white;
     padding: 10px;
     margin: 12px 0px;
     min-width: 250px;
     box-shadow: var(--box-shadow);
-    font-size: 18px;
 }
 
-.records .income li{
+.record .income li{
     border-left: 10px solid #2ECC71;
 }
 
-.records .expense li{
+.record .expense li{
     border-left: 10px solid #DF5E5E;
 }
 
-.records li p:first-child{
+.record li p:first-child{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.records span{
-    font-size: 18px;
+.record span{
+    font-size: 20px;
 }
 
-.records span#time{
+.record span#time{
     color: #717171;
     font-size: 12px;
 }
 
-.records i.delete{
+.record i.delete{
     margin-left: 15px;
     color: #082032;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.records i.delete:hover{
-    color: #B42B51;
+.record i.delete:hover{
+    color: #bf1042;
 }
 
 
